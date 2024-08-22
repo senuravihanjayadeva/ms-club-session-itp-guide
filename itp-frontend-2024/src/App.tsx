@@ -1,13 +1,10 @@
 import "./App.css";
-import React, { useState } from "react";
-import PostsList from "./pages/posts-list";
-import CreatePost from "./layout/create-post";
+import React from "react";
 
 function App() {
   return (
     <div>
-      <CreatePost/>
-      <PostsList />
+      ITP GUIDE 2024
     </div>
   );
 }

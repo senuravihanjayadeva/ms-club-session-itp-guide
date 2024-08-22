@@ -1,0 +1,38 @@
+{
+  "name": "post-api-service",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "rm -rf dist && babel src --out-dir dist  --copy-files",
+    "start": "node dist/app.js",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.10.0",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/swagger": "^8.15.0",
+    "@fastify/swagger-ui": "^4.1.0",
+    "@prisma/client": "5.18.0",
+    "fastify": "^4.28.1",
+    "fastify-plugin": "^4.5.1",
+    "nodemon": "^3.1.4",
+    "pino": "^9.3.2",
+    "pino-pretty": "^11.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-env": "^7.25.3",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "prettier": "^3.3.3",
+    "prisma": "^5.18.0"
+  }
+}
